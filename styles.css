@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,8 @@ body {
   background: var(--paper);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -63,6 +66,8 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
