@@ -256,8 +256,8 @@ const tourCount = document.querySelector("#tour-count");
 const header = document.querySelector(".site-header");
 const toggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".site-nav a");
-const heroSlides = document.querySelectorAll(".hero-slide");
-const heroDots = document.querySelectorAll(".hero-dots button");
+const allHeroSlides = Array.from(document.querySelectorAll(".hero-slide"));
+const allHeroDots = Array.from(document.querySelectorAll(".hero-dots button"));
 const heroArrows = document.querySelectorAll("[data-slide-direction]");
 const hero = document.querySelector(".hero");
 const galleryItems = document.querySelectorAll(".gallery-item img");
@@ -270,6 +270,23 @@ let activeHeroSlide = 0;
 let heroSlideTimer;
 let activeTestimonialSlide = 0;
 let testimonialTimer;
+const useLiteMobileHero = window.matchMedia("(max-width: 640px)").matches;
+const mobileHeroKeepIndexes = [0, 2, 3];
+let heroSlides = allHeroSlides;
+let heroDots = allHeroDots;
+
+if (useLiteMobileHero && allHeroSlides.length > mobileHeroKeepIndexes.length) {
+  heroSlides = allHeroSlides.filter((slide, index) => mobileHeroKeepIndexes.includes(index));
+  heroDots = allHeroDots.filter((dot, index) => mobileHeroKeepIndexes.includes(index));
+
+  allHeroSlides.forEach((slide, index) => {
+    if (!mobileHeroKeepIndexes.includes(index)) slide.remove();
+  });
+
+  allHeroDots.forEach((dot, index) => {
+    if (!mobileHeroKeepIndexes.includes(index)) dot.remove();
+  });
+}
 
 function ensureHeroSlideLoaded(index) {
   const slide = heroSlides[index];
@@ -448,9 +465,9 @@ function moveHeroSlide(direction) {
   startHeroSlider();
 }
 
-heroDots.forEach((dot) => {
+heroDots.forEach((dot, visibleIndex) => {
   dot.addEventListener("click", () => {
-    showHeroSlide(Number(dot.dataset.slideIndex));
+    showHeroSlide(visibleIndex);
     startHeroSlider();
   });
 });
