@@ -2001,9 +2001,16 @@ h3 {
 
 .site-footer div {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 18px;
+  max-width: 100%;
   color: white;
   font-weight: 850;
+}
+
+.site-footer a {
+  text-align: center;
 }
 
 @media (max-width: 1080px) {
