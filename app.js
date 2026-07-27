@@ -271,6 +271,15 @@ let heroSlideTimer;
 let activeTestimonialSlide = 0;
 let testimonialTimer;
 
+function ensureHeroSlideLoaded(index) {
+  const slide = heroSlides[index];
+  if (!slide) return;
+  const queuedSrc = slide.dataset.src;
+  if (queuedSrc && !slide.getAttribute("src")) {
+    slide.setAttribute("src", queuedSrc);
+  }
+}
+
 function labelFor(category) {
   return {
     cycling: "Cycling",
@@ -408,6 +417,8 @@ function showHeroSlide(index) {
   if (!heroSlides.length) return;
 
   activeHeroSlide = (index + heroSlides.length) % heroSlides.length;
+  ensureHeroSlideLoaded(activeHeroSlide);
+  ensureHeroSlideLoaded((activeHeroSlide + 1) % heroSlides.length);
   heroSlides.forEach((slide, slideIndex) => {
     const isActive = slideIndex === activeHeroSlide;
     slide.classList.toggle("active", isActive);
@@ -424,6 +435,8 @@ function startHeroSlider() {
   if (heroSlides.length < 2) return;
 
   hero?.classList.add("js-slider-ready");
+  ensureHeroSlideLoaded(0);
+  ensureHeroSlideLoaded(1);
   clearInterval(heroSlideTimer);
   heroSlideTimer = setInterval(() => {
     showHeroSlide(activeHeroSlide + 1);
