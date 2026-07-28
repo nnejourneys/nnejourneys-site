@@ -86,7 +86,7 @@ const tours = [
   },
   {
     title: "Meghalaya and Assam Family Holiday",
-    subtitle: "",
+    subtitle: "Nature, Culture, Adventure",
     category: "family",
     duration: "7 to 12 days",
     image: "assets/tours/Meghalaya-Assam-Family-Holiday.webp",
