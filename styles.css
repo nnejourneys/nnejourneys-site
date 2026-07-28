@@ -686,7 +686,7 @@ h3 {
 
 .about-hero {
   background:
-    linear-gradient(90deg, rgba(7, 14, 13, 0.68), rgba(7, 14, 13, 0.16)),
+    linear-gradient(90deg, rgba(7, 14, 13, 0.52), rgba(7, 14, 13, 0.1)),
     url("https://pub-3d943afeed9643318d31712e02ebf613.r2.dev/region/region.jpg") center / cover;
 }
 
@@ -1316,8 +1316,8 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 14, 13, 0.7), rgba(7, 14, 13, 0.22) 54%, rgba(7, 14, 13, 0.06)),
-    linear-gradient(0deg, rgba(7, 14, 13, 0.44), rgba(7, 14, 13, 0) 50%);
+    linear-gradient(90deg, rgba(7, 14, 13, 0.54), rgba(7, 14, 13, 0.16) 54%, rgba(7, 14, 13, 0.04)),
+    linear-gradient(0deg, rgba(7, 14, 13, 0.3), rgba(7, 14, 13, 0) 50%);
 }
 
 .tour-detail-hero > img {
@@ -2151,8 +2151,8 @@ h3 {
 
   .hero-media::after {
     background:
-      linear-gradient(90deg, rgba(7, 14, 13, 0.74), rgba(7, 14, 13, 0.3)),
-      linear-gradient(0deg, rgba(7, 14, 13, 0.52), rgba(7, 14, 13, 0) 52%);
+      linear-gradient(90deg, rgba(7, 14, 13, 0.62), rgba(7, 14, 13, 0.22)),
+      linear-gradient(0deg, rgba(7, 14, 13, 0.36), rgba(7, 14, 13, 0) 52%);
   }
 
   h1 {
