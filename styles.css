@@ -723,6 +723,12 @@ h3 {
     url("assets/hero/Travels-in-north-east-india.webp") center 50% / cover;
 }
 
+.thank-you-hero {
+  background:
+    linear-gradient(90deg, rgba(7, 14, 13, 0.5), rgba(7, 14, 13, 0.08)),
+    url("assets/images/thank-you.webp") center 50% / cover;
+}
+
 .assam-hero {
   background:
     linear-gradient(90deg, rgba(7, 14, 13, 0.54), rgba(7, 14, 13, 0.1)),
