@@ -247,6 +247,27 @@ const departureTours = [
   },
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+  const footer = document.querySelector(".site-footer");
+  if (footer && !document.querySelector(".back-to-top-wrap")) {
+    const wrap = document.createElement("div");
+    wrap.className = "back-to-top-wrap";
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "back-to-top";
+    button.textContent = "Back to top";
+    button.setAttribute("aria-label", "Scroll back to the top of the page");
+
+    button.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    wrap.appendChild(button);
+    footer.parentNode.insertBefore(wrap, footer);
+  }
+});
+
 const grid = document.querySelector("#tour-grid");
 const filters = document.querySelectorAll(".filter[data-filter]");
 const departureFilters = document.querySelectorAll("[data-departure-filter]");
