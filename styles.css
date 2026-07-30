@@ -690,7 +690,7 @@ h3 {
   color: white;
   background:
     linear-gradient(90deg, rgba(7, 14, 13, 0.5), rgba(7, 14, 13, 0.08)),
-    url("assets/images/tours/active-interactive-authentic-tours-in-northeast-india-v3.webp") center 50% / cover;
+    url("assets/images/tours/active-interactive-authentic-tours-in-northeast-india-v4.webp") center 50% / cover;
 }
 
 .about-hero {
@@ -2360,8 +2360,16 @@ h3 {
     min-height: 100svh;
   }
 
+  .hero-slide,
+  .tour-detail-hero > img,
   .hero-focus-right-mobile {
-    object-position: 72% center;
+    object-position: center center;
+  }
+
+  .page-hero,
+  .about-hero,
+  .about-page-hero {
+    background-position: center center;
   }
 
   .summary-grid,
