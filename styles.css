@@ -690,7 +690,7 @@ h3 {
   color: white;
   background:
     linear-gradient(90deg, rgba(7, 14, 13, 0.5), rgba(7, 14, 13, 0.08)),
-    url("assets/images/tours/active-interactive-authentic-tours-in-northeast-india.webp") center 58% / cover;
+    url("assets/images/tours/active-interactive-authentic-tours-in-northeast-india.webp") center 50% / cover;
 }
 
 .about-hero {
@@ -738,7 +738,7 @@ h3 {
 .assam-hero {
   background:
     linear-gradient(90deg, rgba(7, 14, 13, 0.54), rgba(7, 14, 13, 0.1)),
-    url("assets/hero/Assam-Tours-Northeast-India.webp") center 52% / cover;
+    url("assets/hero/active-interactive-authentic-tours-in-northeast-india.webp") center 52% / cover;
 }
 
 .meghalaya-hero {
