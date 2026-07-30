@@ -1487,6 +1487,21 @@ h3 {
   color: white;
 }
 
+.tour-specs.section-pad,
+.tour-enquiry.section-pad,
+.tour-contact-form.section-pad {
+  padding-top: clamp(28px, 4vw, 48px);
+  padding-bottom: clamp(28px, 4vw, 48px);
+}
+
+.tour-specs .section-heading {
+  margin-bottom: 28px;
+}
+
+.tour-specs .section-heading .eyebrow {
+  margin: 0 0 10px;
+}
+
 .journey-flow {
   background: var(--paper);
 }
