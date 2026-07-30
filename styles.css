@@ -492,7 +492,7 @@ h3 {
 }
 
 .section-pad {
-  padding: clamp(68px, 8vw, 112px) clamp(20px, 5vw, 72px);
+  padding: clamp(68px, 8vw, 112px) clamp(28px, 6vw, 96px);
 }
 
 .section-heading {
@@ -2333,8 +2333,8 @@ h3 {
   }
 
   .section-pad {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .tour-grid {
