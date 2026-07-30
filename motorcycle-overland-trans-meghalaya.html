@@ -197,18 +197,18 @@
           <h2>Plan the Trans-Meghalaya Motorcycle &amp; Overland Tour</h2>
           <p class="heading-note">Share a few details and we will get back to you with the best route, duration and cost options.</p>
         </div>
-        <form class="enquiry-form" name="tour-enquiry" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" data-tour-name="Trans-Meghalaya Motorcycle & Overland Tour">
+        <form class="enquiry-form" name="tour-enquiry" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" data-tour-name="Trans-Meghalaya Motorcycle &amp;amp; Overland Tour">
           <input type="hidden" name="form-name" value="tour-enquiry" />
-          <input type="hidden" name="tour" value="Trans-Meghalaya Motorcycle & Overland Tour" />
+          <input type="hidden" name="tour" value="Trans-Meghalaya Motorcycle &amp;amp; Overland Tour" />
           <p class="sr-only"><label>Leave this field empty <input name="bot-field" /></label></p>
           <div class="form-grid">
-            <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
-            <label><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>
-            <label><span>Preferred month</span><input type="text" name="month" placeholder="October, November..." /></label>
-            <label><span>Group size</span><input type="text" name="groupSize" placeholder="2 travellers" /></label>
+            <label><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required /></label>
+            <label><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
+            <label><span>Tour</span><select name="tour-select" aria-label="Tour selection"><option value="Trans-Meghalaya Motorcycle &amp;amp; Overland Tour" selected>Trans-Meghalaya Motorcycle &amp;amp; Overland Tour</option></select></label>
+            <label><span>Group size</span><input type="text" name="groupSize" placeholder="2" /></label>
           </div>
-          <label><span>Your message</span><textarea name="message" rows="6" placeholder="Tell us about your dates, experience, preferred pace, and anything you would like us to know."></textarea></label>
-          <button class="button primary" type="submit">Send enquiry</button>
+          <label class="form-full"><span>What kind of trip are you imagining?</span><textarea name="message" rows="6" placeholder="Dates, riding level, interests, comfort preferences"></textarea></label>
+          <button class="button primary form-submit" type="submit">Request trip plan</button>
         </form>
       </section>
       <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Gallery image preview"><button class="lightbox-close" type="button"><span class="sr-only">Close gallery preview</span></button><img src="" alt="Expanded tour gallery image" /></div>
