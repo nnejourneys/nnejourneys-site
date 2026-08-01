@@ -801,7 +801,7 @@ h3 {
 .assam-hero {
   background:
     linear-gradient(90deg, rgba(7, 14, 13, 0.54), rgba(7, 14, 13, 0.1)),
-    url("assets/hero/active-interactive-authentic-tours-in-northeast-india.webp") center 52% / cover;
+    url("assets/hero/Assam-Tours-Northeast-India.webp") center 52% / cover;
 }
 
 .meghalaya-hero {
@@ -1046,6 +1046,8 @@ h3 {
 
 .about-vision {
   background: var(--stone);
+  padding-top: clamp(44px, 5vw, 72px);
+  padding-bottom: clamp(44px, 5vw, 72px);
 }
 
 .vision-grid,
