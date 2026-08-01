@@ -6,11 +6,11 @@
   --white: #ffffff;
   --stone: #f7f6f2;
   --line: rgba(16, 22, 21, 0.12);
-  --forest: #173f35;
-  --leaf: #6e8c5d;
-  --river: #236a78;
-  --saffron: #c66f3d;
-  --gold: #d7b46a;
+  --forest: #000000;
+  --leaf: #5f5f5f;
+  --river: #4a4a4a;
+  --saffron: #2b2b2b;
+  --gold: #8a8a8a;
   --shadow: 0 26px 80px rgba(16, 22, 21, 0.14);
   --display-font: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -72,7 +72,7 @@ a {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 30px;
-  padding: 16px clamp(18px, 4vw, 58px);
+  padding: 16px clamp(28px, 6vw, 96px);
   color: white;
   transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease, padding 180ms ease;
 }
@@ -159,6 +159,7 @@ a {
   padding: 0 17px;
   font-size: 0.84rem;
   font-weight: 850;
+  text-transform: uppercase;
 }
 
 .site-header.scrolled .header-cta,
@@ -275,7 +276,7 @@ a {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--saffron);
+  color: white;
   font-size: 0.74rem;
   font-weight: 900;
   letter-spacing: 0;
@@ -283,12 +284,12 @@ a {
 }
 
 .hero .eyebrow {
-  color: var(--gold);
+  color: white;
 }
 
 .hero-content h1 {
   margin-top: 26px;
-  color: var(--gold);
+  color: white;
   font-size: clamp(1.75rem, 3.4vw, 3.9rem);
   font-family: "Poppins", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 700;
@@ -376,6 +377,7 @@ h3 {
   padding: 0 24px;
   font-size: 0.94rem;
   font-weight: 850;
+  text-transform: uppercase;
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
@@ -822,7 +824,7 @@ h3 {
 }
 
 .region .eyebrow {
-  color: var(--gold);
+  color: white;
 }
 
 .catalog-heading {
@@ -1209,7 +1211,7 @@ h3 {
 }
 
 .destination-cta .eyebrow {
-  color: var(--gold);
+  color: white;
 }
 
 .destination-cta p:not(.eyebrow) {
@@ -1345,18 +1347,35 @@ h3 {
   position: relative;
   z-index: 2;
   max-width: 880px;
+  color: white;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.38);
 }
 
 .tour-detail-copy h1 {
+  margin: 0 0 14px;
+  color: white;
   font-size: clamp(2.4rem, 4.8vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.tour-detail-copy .eyebrow,
+.tour-detail-copy .back-link,
+.tour-detail-copy .hero-kicker {
+  color: white;
+}
+
+.tour-detail-copy .hero-kicker {
+  margin: 0;
+  font-size: clamp(1rem, 1.85vw, 1.5rem);
+  font-family: "Josefin Sans", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .back-link {
   display: inline-flex;
   align-items: center;
   margin-bottom: 22px;
-  color: rgba(255, 255, 255, 0.78);
   font-size: 0.86rem;
   font-weight: 850;
 }
@@ -1536,7 +1555,7 @@ h3 {
 .flow-stack {
   display: grid;
   gap: 14px;
-  max-width: 1120px;
+  max-width: none;
 }
 
 .flow-stack article {
@@ -1548,7 +1567,7 @@ h3 {
 }
 
 .flow-stack h3 {
-  max-width: 760px;
+  max-width: none;
   margin-bottom: 12px;
   color: var(--ink);
   font-size: clamp(0.9rem, 1.35vw, 1.15rem);
@@ -1556,7 +1575,7 @@ h3 {
 }
 
 .flow-stack p {
-  max-width: 820px;
+  max-width: none;
   margin: 0;
   color: var(--muted);
   font-size: 1.03rem;
