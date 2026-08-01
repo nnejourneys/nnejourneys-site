@@ -664,7 +664,7 @@ h3 {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 24px;
   align-items: center;
-  padding: clamp(34px, 4.8vw, 58px) clamp(20px, 5vw, 72px);
+  padding: clamp(34px, 4.8vw, 58px) clamp(32px, 6vw, 88px);
   background: var(--stone);
   border-top: 1px solid var(--line);
 }
@@ -674,11 +674,74 @@ h3 {
   font-size: clamp(1.8rem, 3.5vw, 3.8rem);
 }
 
+.home-tour-cta .eyebrow {
+  color: black;
+}
+
+.story-band .eyebrow {
+  color: black;
+}
+
+.contact .eyebrow {
+  color: black;
+}
+
+.about-copy .eyebrow {
+  color: black;
+}
+
 .home-tour-cta p:not(.eyebrow) {
   max-width: 640px;
   margin: 14px 0 0;
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.home-what-we-do,
+.home-what-we-do .trip-types article,
+.home-what-we-do .trip-types div,
+.vision-grid article,
+.insight-grid article,
+.people-grid article,
+.faq-list details,
+.departure-list article,
+.summary-grid article,
+.tour-highlights,
+.flow-stack article,
+.similar-tour-card,
+.enquiry-form {
+  color: black;
+}
+
+.home-what-we-do .trip-types h3,
+.home-what-we-do .trip-types p,
+.home-what-we-do .tour-link,
+.vision-grid h3,
+.vision-grid p,
+.insight-grid h3,
+.insight-grid p,
+.people-grid h3,
+.people-grid p,
+.people-grid span,
+.faq-list summary,
+.faq-list p,
+.departure-list h3,
+.departure-list p,
+.departure-list span,
+.departure-list a,
+.summary-grid span,
+.summary-grid strong,
+.tour-highlights h3,
+.tour-highlights li,
+.flow-stack h3,
+.flow-stack p,
+.similar-tour-card h3,
+.similar-tour-card p,
+.similar-tour-card span,
+.similar-tour-card a,
+.enquiry-form span,
+.enquiry-form label {
+  color: black;
 }
 
 .page-hero {
@@ -1546,6 +1609,19 @@ h3 {
 
 .tour-specs .section-heading .eyebrow {
   margin: 0 0 10px;
+}
+
+.tour-specs .eyebrow,
+.tour-specs h2,
+.tour-specs h3,
+.tour-specs p,
+.tour-specs li,
+.tour-specs span,
+.tour-specs strong,
+.tour-specs .section-heading p,
+.tour-specs .spec-grid article,
+.tour-specs .spec-grid article * {
+  color: white;
 }
 
 .journey-flow {
@@ -2424,4 +2500,129 @@ h3 {
   .faq-topic-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.home-what-we-do .section-heading,
+.home-what-we-do .section-heading h2,
+.home-what-we-do .section-heading p,
+.home-what-we-do .trip-types h3,
+.home-what-we-do .trip-types p,
+.home-what-we-do .tour-link,
+.departures-intro h1,
+.departures-intro h2,
+.departures-intro h3,
+.departures-intro p,
+.departure-list h3,
+.departure-list p,
+.departure-list span,
+.departure-list a,
+.destination-intro-grid h1,
+.destination-intro-grid h2,
+.destination-intro-grid h3,
+.destination-intro-grid p,
+.destination-states .eyebrow,
+.destination-states h2,
+.destination-states .section-heading p,
+.destination-detail .eyebrow,
+.destination-detail h2,
+.destination-detail h3,
+.destination-detail p,
+.destination-detail li,
+.destination-stories h3,
+.destination-stories p,
+.state-grid h3,
+.state-grid p,
+.state-grid .tour-meta span,
+.state-grid .tour-link,
+.about-story .eyebrow,
+.about-story h2,
+.about-story p,
+.about-vision .eyebrow,
+.about-vision h2,
+.about-vision .heading-note,
+.vision-grid h3,
+.vision-grid p,
+.people-section .eyebrow,
+.people-section h2,
+.people-section .section-heading p,
+.people-grid h3,
+.people-grid p,
+.people-grid span,
+.testimonials .eyebrow,
+.testimonials h2,
+.testimonial-grid p,
+.testimonial-grid .trip-name,
+.faq-section .eyebrow,
+.faq-section h2,
+.faq-section .section-heading p,
+.faq-list summary,
+.faq-list p,
+.faq-list p a,
+.faq-topics .eyebrow,
+.faq-topics h2,
+.faq-topics .section-heading p,
+.tour-catalog .eyebrow,
+.tour-catalog h2,
+.tour-catalog .heading-note,
+.tour-catalog .tour-count,
+.tour-catalog .tour-meta span,
+.tour-detail-content .eyebrow,
+.tour-detail-content h2,
+.tour-detail-content h3,
+.tour-detail-content p,
+.tour-detail-content li,
+.journey-flow .eyebrow,
+.journey-flow h2,
+.journey-flow .section-heading p,
+.journey-flow h3,
+.journey-flow p,
+.journey-flow li,
+.tour-enquiry .eyebrow,
+.tour-enquiry h2,
+.tour-enquiry p,
+.tour-enquiry a,
+.tour-gallery .eyebrow,
+.tour-gallery h2,
+.tour-gallery .section-heading p,
+.tour-contact-form .eyebrow,
+.tour-contact-form h2,
+.tour-contact-form .section-heading p,
+.tour-contact-form label,
+.faq-topic-grid .tour-card h3,
+.faq-topic-grid .tour-card p,
+.tour-card h3,
+.tour-card p,
+.tour-card .tag {
+  color: black;
+}
+
+.tour-teaser,
+.tour-teaser .eyebrow,
+.tour-teaser h2,
+.tour-teaser p,
+.tour-teaser a,
+.destination-cta,
+.destination-cta .eyebrow,
+.destination-cta h2,
+.destination-cta p,
+.destination-cta a,
+.responsibility,
+.responsibility .eyebrow,
+.responsibility h2,
+.responsibility p,
+.responsibility li,
+.tour-specs,
+.tour-specs .eyebrow,
+.tour-specs h2,
+.tour-specs h3,
+.tour-specs p,
+.tour-specs li,
+.tour-specs span,
+.tour-specs strong,
+.story-band,
+.story-band .eyebrow,
+.story-band h2,
+.story-band p,
+.story-band a {
+  color: white;
 }
