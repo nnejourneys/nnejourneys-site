@@ -1,3 +1,13 @@
+/cycle-tour-assam /cycle-tour-assam.html 200
+/cycling-tours-northeast-india /cycling-tours-northeast-india.html 200
+/walking-holidays-northeast-india /walking-holidays-northeast-india.html 200
+/tours-northeast-india /tours-northeast-india.html 200
+/departures-tour-2026 /departures-tour-2026.html 200
+/cycle-tour-of-assam.html /cycle-tour-assam.html 301
+/cycling-tours-in-northeast-india.html /cycling-tours-northeast-india.html 301
+/walking-holidays-in-northeast-india.html /walking-holidays-northeast-india.html 301
+/tours.html /tours-northeast-india.html 301
+/departures-2026.html /departures-tour-2026.html 301
 /thank-you /thank-you.html 200
 /work/* /404.html 404
 /outputs/* /404.html 404

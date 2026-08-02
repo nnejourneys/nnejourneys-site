@@ -6,7 +6,7 @@ const tours = [
     tag: "Cycling",
     duration: "6 to 16 days",
     image: "assets/images/tours/cycling/brahmaputra-explorer/cycle-tour-of-assam-brahmaputra-explore.webp",
-    href: "cycle-tour-of-assam.html",
+    href: "cycle-tour-assam.html",
   },
   {
     title: "Cycling in Eastern Arunachal",
