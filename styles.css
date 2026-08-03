@@ -195,7 +195,7 @@ a {
   min-height: 100svh;
   display: grid;
   align-items: end;
-  padding: 128px clamp(20px, 5vw, 72px) 76px;
+  padding: 128px clamp(28px, 6vw, 96px) 76px;
   color: white;
   overflow: hidden;
 }
@@ -271,7 +271,7 @@ a {
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 900px;
+  max-width: 760px;
 }
 
 .eyebrow {
@@ -288,9 +288,10 @@ a {
 }
 
 .hero-content h1 {
-  margin-top: 26px;
+  margin-top: 0;
   color: white;
-  font-size: clamp(1.75rem, 3.4vw, 3.9rem);
+  font-size: clamp(1.75rem, 3vw, 3.35rem);
+  line-height: 1;
   font-family: "Poppins", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -332,9 +333,11 @@ h3 {
 }
 
 .hero-kicker {
-  margin: 4px 0 8px;
+  margin: 8px 0 0;
   color: white;
-  font-size: calc(clamp(1.75rem, 3.4vw, 3.9rem) * 0.5);
+  max-width: 660px;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  line-height: 1.25;
   font-family: "Josefin Sans", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -342,7 +345,7 @@ h3 {
 
 @media (min-width: 981px) {
   .hero-content {
-    max-width: min(1180px, calc(100vw - 144px));
+    max-width: min(920px, calc(100vw - 192px));
   }
 
   .hero-content h1,
@@ -364,8 +367,14 @@ h3 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 34px;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero .button {
+  min-height: 44px;
+  padding: 0 20px;
+  font-size: 0.8rem;
 }
 
 .button {
@@ -399,12 +408,13 @@ h3 {
 .quick-contact {
   position: absolute;
   z-index: 3;
-  right: clamp(20px, 5vw, 72px);
+  right: clamp(28px, 6vw, 96px);
   bottom: 28px;
   display: flex;
-  gap: 18px;
+  align-items: center;
+  gap: 14px;
   color: rgba(255, 255, 255, 0.78);
-  font-size: 0.86rem;
+  font-size: 0.78rem;
   font-weight: 750;
 }
 
@@ -415,8 +425,8 @@ h3 {
 }
 
 .quick-contact .social-link svg {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
 }
 
 .quick-contact .social-link rect,
@@ -435,7 +445,7 @@ h3 {
 .hero-slider-controls {
   position: absolute;
   z-index: 4;
-  right: clamp(20px, 5vw, 72px);
+  right: clamp(28px, 6vw, 96px);
   bottom: 70px;
   display: flex;
   align-items: center;
@@ -2392,6 +2402,8 @@ h3 {
   .hero {
     min-height: 100vh;
     min-height: 100svh;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 116px;
     padding-bottom: 132px;
   }
