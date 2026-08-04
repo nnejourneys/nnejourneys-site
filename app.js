@@ -23,7 +23,7 @@ const tours = [
     subtitle: "The Abode of clouds",
     category: "cycling",
     duration: "6 to 12 days",
-    image: "assets/images/tours/cycling/abode-of-clouds/Cycle-tour-of-meghalaya.webp",
+    image: "assets/images/tours/cycling/abode-of-clouds/Cycle-tour-of-meghalaya-india.webp",
     href: "cycle-tour-of-meghalaya.html",
   },
   {

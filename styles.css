@@ -759,7 +759,7 @@ h3 {
   min-height: 100svh;
   display: grid;
   align-items: end;
-  padding: 150px clamp(20px, 5vw, 72px) 72px;
+  padding: 150px clamp(28px, 6vw, 96px) 72px;
   color: white;
   background:
     linear-gradient(90deg, rgba(7, 14, 13, 0.5), rgba(7, 14, 13, 0.08)),
@@ -1396,7 +1396,7 @@ h3 {
   min-height: 100svh;
   display: grid;
   align-items: end;
-  padding: 150px clamp(20px, 5vw, 72px) 72px;
+  padding: 150px clamp(28px, 6vw, 96px) 72px;
   color: white;
   overflow: hidden;
 }
@@ -2465,6 +2465,13 @@ h3 {
   .tour-detail-hero {
     min-height: 100vh;
     min-height: 100svh;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .page-hero {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .hero-slide,
