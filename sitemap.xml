@@ -193,6 +193,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nnejourneys.com/arunachal-pradesh-active-youth-expedition.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nnejourneys.com/meghalaya-youth-expedition.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nnejourneys.com/people-of-the-brahmaputra-valley.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -249,6 +261,12 @@
   <url>
     <loc>https://nnejourneys.com/walking-tour-meghalaya.html</loc>
     <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nnejourneys.com/youth-educational-journeys-northeast-india.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

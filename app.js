@@ -197,6 +197,26 @@ const tours = [
     image: "assets/tours/arunachal-unravelled-hero.webp",
     href: "arunachal-unravelled.html",
   },
+  {
+    title: "Meghalaya Youth Expedition",
+    subtitle: "Rainfall, root bridges and local economy",
+    category: "youth-travel",
+    tag: "Youth Expedition",
+    duration: "7 days",
+    region: "Meghalaya",
+    image: "assets/tours/youth-educational-travel-meghalaya-northeast-india.webp",
+    href: "meghalaya-youth-expedition.html",
+  },
+  {
+    title: "Arunachal Pradesh Active Youth Expedition",
+    subtitle: "Active learning through rivers, forests and communities",
+    category: "youth-travel",
+    tag: "Youth Expedition",
+    duration: "Custom duration",
+    region: "Arunachal Pradesh",
+    image: "assets/tours/Youth-expedition-arunachal-pradesh.webp",
+    href: "arunachal-pradesh-active-youth-expedition.html",
+  },
 ];
 
 const departureTours = [
@@ -326,6 +346,7 @@ function labelFor(category) {
     motorcycle: "Motorcycle & Overland",
     family: "Family",
     culture: "Nature & Culture",
+    "youth-travel": "Youth Travel",
   }[category];
 }
 
