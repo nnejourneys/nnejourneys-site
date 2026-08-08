@@ -60,6 +60,32 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px #173f3a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 .site-header {
   position: fixed;
   z-index: 50;
@@ -1936,7 +1962,7 @@ h3 {
 
 .tour-contact-form .enquiry-form input::placeholder,
 .tour-contact-form .enquiry-form textarea::placeholder {
-  color: #7c7871;
+  color: #706d67;
 }
 
 .tour-contact-form .enquiry-form input:focus,
@@ -2250,6 +2276,7 @@ h3 {
 
 .site-footer img {
   width: 210px;
+  height: auto;
   max-width: 72vw;
 }
 

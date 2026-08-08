@@ -307,10 +307,12 @@ const lightboxImage = document.querySelector(".lightbox img");
 const lightboxClose = document.querySelector(".lightbox-close");
 const testimonialTrack = document.querySelector(".testimonial-grid");
 const testimonialCards = testimonialTrack ? Array.from(testimonialTrack.querySelectorAll("article")) : [];
+const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 let activeHeroSlide = 0;
 let heroSlideTimer;
 let activeTestimonialSlide = 0;
 let testimonialTimer;
+let lightboxTrigger = null;
 const useLiteMobileHero = window.matchMedia("(max-width: 640px)").matches;
 const mobileHeroKeepIndexes = [0, 2, 3];
 let heroSlides = allHeroSlides;
@@ -491,7 +493,7 @@ function showHeroSlide(index) {
 }
 
 function startHeroSlider() {
-  if (heroSlides.length < 2) return;
+  if (heroSlides.length < 2 || reducedMotionQuery.matches) return;
 
   hero?.classList.add("js-slider-ready");
   ensureHeroSlideLoaded(0);
@@ -539,7 +541,7 @@ function updateTestimonialSlider() {
 }
 
 function startTestimonialSlider() {
-  if (!testimonialTrack || testimonialCards.length <= visibleTestimonialCards()) return;
+  if (!testimonialTrack || testimonialCards.length <= visibleTestimonialCards() || reducedMotionQuery.matches) return;
 
   clearInterval(testimonialTimer);
   testimonialTimer = setInterval(() => {
@@ -621,6 +623,7 @@ if (toggle) {
   toggle.addEventListener("click", () => {
     const isOpen = header.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
   });
 }
 
@@ -628,6 +631,7 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     header.classList.remove("open");
     toggle?.setAttribute("aria-expanded", "false");
+    toggle?.setAttribute("aria-label", "Open navigation");
   });
 });
 
@@ -635,18 +639,22 @@ galleryItems.forEach((image) => {
   image.parentElement.addEventListener("click", () => {
     if (!lightbox || !lightboxImage) return;
 
+    lightboxTrigger = image.parentElement;
     lightboxImage.src = image.src;
     lightboxImage.alt = image.alt;
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
+    lightboxClose?.focus();
   });
 });
 
 function closeLightbox() {
-  if (!lightbox) return;
+  if (!lightbox || !lightbox.classList.contains("open")) return;
 
   lightbox.classList.remove("open");
   lightbox.setAttribute("aria-hidden", "true");
+  lightboxTrigger?.focus();
+  lightboxTrigger = null;
 }
 
 lightboxClose?.addEventListener("click", closeLightbox);
@@ -654,7 +662,20 @@ lightbox?.addEventListener("click", (event) => {
   if (event.target === lightbox) closeLightbox();
 });
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeLightbox();
+  if (event.key === "Tab" && lightbox?.classList.contains("open")) {
+    event.preventDefault();
+    lightboxClose?.focus();
+  }
+
+  if (event.key !== "Escape") return;
+
+  closeLightbox();
+  if (header?.classList.contains("open")) {
+    header.classList.remove("open");
+    toggle?.setAttribute("aria-expanded", "false");
+    toggle?.setAttribute("aria-label", "Open navigation");
+    toggle?.focus();
+  }
 });
 
 window.addEventListener("scroll", syncHeader, { passive: true });

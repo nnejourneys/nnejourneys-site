@@ -75,7 +75,7 @@
       <a class="brand" href="index.html" aria-label="North by Northeast Journeys home">
         <img src="assets/north-by-northeast-logo.png" alt="North by Northeast" width="420" height="287" />
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav" id="site-nav">
@@ -285,7 +285,7 @@
           <form class="enquiry-form" name="homepage-enquiry" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="homepage-enquiry" />
             <input type="hidden" name="source" value="Homepage - Start planning" />
-            <p class="sr-only"><label>Leave this field empty <input name="bot-field" /></label></p>
+            <p class="sr-only"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
             <div class="form-grid">
               <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
               <label><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>

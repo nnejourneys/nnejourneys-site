@@ -75,7 +75,7 @@
       <a class="brand" href="index.html" aria-label="North by Northeast Journeys home">
         <img src="assets/north-by-northeast-logo.png" alt="North by Northeast" width="420" height="287" />
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav" id="site-nav">
@@ -177,7 +177,7 @@
         <form class="enquiry-form" name="tour-enquiry" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" data-tour-name="The Road to Tawang">
           <input type="hidden" name="form-name" value="tour-enquiry" />
           <input type="hidden" name="tour" value="The Road to Tawang" />
-          <p class="sr-only"><label>Leave this field empty <input name="bot-field" /></label></p>
+          <p class="sr-only"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
           <div class="form-grid">
             <label><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required /></label>
             <label><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
@@ -188,7 +188,7 @@
           <button class="button primary form-submit" type="submit">Request trip plan</button>
         </form>
       </section>
-      <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Gallery image preview"><button class="lightbox-close" type="button"><span class="sr-only">Close gallery preview</span></button><img src="" alt="Expanded tour gallery image" /></div>
+      <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Gallery image preview" aria-modal="true"><button class="lightbox-close" type="button"><span class="sr-only">Close gallery preview</span></button><img src="" alt="Expanded tour gallery image" /></div>
 
     </main>
 
