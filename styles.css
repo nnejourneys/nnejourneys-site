@@ -997,12 +997,10 @@ h3 {
   object-fit: cover;
 }
 
-.tour-catalog .tour-card-media img {
-  aspect-ratio: 16 / 9;
-}
-
-.destination-states .tour-card-media img {
-  aspect-ratio: 16 / 9;
+.tour-catalog .tour-card-media img,
+.state-grid .tour-card-media img {
+  height: auto;
+  aspect-ratio: 16 / 11;
 }
 
 .tour-card .body {
@@ -1130,7 +1128,7 @@ h3 {
 
 .people-grid img {
   width: 100%;
-  aspect-ratio: 1.32 / 1;
+  aspect-ratio: 16 / 14;
   object-fit: cover;
 }
 
@@ -1419,7 +1417,7 @@ h3 {
 .departure-list img {
   height: auto;
   min-height: 0;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 11;
   align-self: center;
 }
 
