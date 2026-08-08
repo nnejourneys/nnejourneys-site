@@ -1250,6 +1250,23 @@ h3 {
   color: var(--muted);
 }
 
+.planning-guides .faq-topic-grid {
+  grid-auto-rows: 1fr;
+}
+
+.planning-guides .faq-topic-grid .tour-card {
+  height: 100%;
+}
+
+.planning-guides .faq-topic-grid .tour-card .body {
+  display: flex;
+  flex-direction: column;
+}
+
+.planning-guides .faq-topic-grid .tour-link {
+  margin-top: auto;
+}
+
 .destination-states {
   background: var(--stone);
 }
