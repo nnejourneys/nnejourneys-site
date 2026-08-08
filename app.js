@@ -390,7 +390,7 @@ function renderTours(filter = "all") {
       (tour) => `
         <article class="tour-card">
           <div class="tour-card-media">
-            <img src="${tour.image}" alt="${imageAltFor(tour)}" loading="lazy" />
+            <img src="${tour.image}" alt="${imageAltFor(tour)}" loading="lazy" width="1280" height="720" />
             <span class="tag">${tour.tag || labelFor(tour.category)}</span>
           </div>
           <div class="body">
@@ -451,7 +451,7 @@ function renderSimilarTours() {
         .map(
           (tour) => `
             <article class="similar-tour-card">
-              <img src="${tour.image}" alt="${imageAltFor(tour)}" loading="lazy" />
+              <img src="${tour.image}" alt="${imageAltFor(tour)}" loading="lazy" width="1280" height="720" />
               <div>
                 <span>${tour.tag || labelFor(tour.category)}</span>
                 <h3>${tour.title}</h3>
@@ -552,7 +552,11 @@ function startTestimonialSlider() {
   }, 4500);
 }
 
-window.addEventListener("resize", updateTestimonialSlider);
+let testimonialResizeFrame;
+window.addEventListener("resize", () => {
+  cancelAnimationFrame(testimonialResizeFrame);
+  testimonialResizeFrame = requestAnimationFrame(updateTestimonialSlider);
+}, { passive: true });
 
 filters.forEach((button) => {
   button.addEventListener("click", () => {
