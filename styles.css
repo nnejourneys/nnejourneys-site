@@ -997,6 +997,14 @@ h3 {
   object-fit: cover;
 }
 
+.tour-catalog .tour-card-media img {
+  aspect-ratio: 16 / 9;
+}
+
+.destination-states .tour-card-media img {
+  aspect-ratio: 16 / 9;
+}
+
 .tour-card .body {
   padding: 20px;
 }
@@ -1406,6 +1414,13 @@ h3 {
   height: 100%;
   min-height: 210px;
   object-fit: cover;
+}
+
+.departure-list img {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  align-self: center;
 }
 
 .departure-list div {
