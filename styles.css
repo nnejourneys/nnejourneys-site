@@ -2292,6 +2292,17 @@ h3 {
   margin: 0;
 }
 
+.contact-map-link .map-link-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  fill: #4285f4;
+}
+
+.contact-map-link .map-link-icon circle {
+  fill: white;
+}
+
 .back-to-top-wrap {
   display: flex;
   justify-content: center;
