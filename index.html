@@ -23,31 +23,56 @@
 {
       "@context": "https://schema.org",
       "@type": "TravelAgency",
+      "@id": "https://nnejourneys.com/#organization",
       "name": "North by Northeast Journeys",
       "url": "https://nnejourneys.com/",
       "logo": "https://nnejourneys.com/assets/north-by-northeast-logo.png",
       "image": "https://nnejourneys.com/assets/images/home/hero/Active-holidays-northeast-india.webp",
       "description": "Explore Northeast India tours and holidays with a local team, including cycling, walking, culture, wildlife, family and multi-activity journeys.",
       "email": "nnejourneys@gmail.com",
-      "telephone": [
-            "+91 9150 033 886",
-            "+91 97109 09322"
+      "telephone": "+91 9150 033 886",
+      "contactPoint": [
+            {
+                  "@type": "ContactPoint",
+                  "telephone": "+91 9150 033 886",
+                  "contactType": "customer service",
+                  "availableLanguage": [
+                        "English"
+                  ]
+            },
+            {
+                  "@type": "ContactPoint",
+                  "telephone": "+91 97109 09322",
+                  "contactType": "customer service",
+                  "availableLanguage": [
+                        "English"
+                  ]
+            }
       ],
+      "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mansiri House, Deorigaon",
+            "addressLocality": "Tezpur",
+            "addressRegion": "Assam",
+            "postalCode": "784001",
+            "addressCountry": "IN"
+      },
+      "hasMap": "https://maps.app.goo.gl/RZGttK2hmMWYSo9P7",
       "areaServed": [
             {
-                  "@type": "Place",
+                  "@type": "State",
                   "name": "Assam"
             },
             {
-                  "@type": "Place",
+                  "@type": "State",
                   "name": "Arunachal Pradesh"
             },
             {
-                  "@type": "Place",
+                  "@type": "State",
                   "name": "Meghalaya"
             },
             {
-                  "@type": "Place",
+                  "@type": "State",
                   "name": "Nagaland"
             },
             {
