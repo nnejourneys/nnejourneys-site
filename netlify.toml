@@ -39,6 +39,46 @@
   to = "/eastern-arunachal-multi-activity-tour-2026.html"
   status = 301
 
+[[redirects]]
+  from = "/tours/cycle-tour-of-meghalaya"
+  to = "/cycle-tour-of-meghalaya.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/cycle-tour-trans-meghalaya"
+  to = "/cycle-tour-of-meghalaya.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/cycle-tour-of-assam"
+  to = "/cycle-tour-assam.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/departure-cycle-tour-road-to-anini"
+  to = "/cycle-tour-of-mishmi-hills-arunachal-pradesh.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/walking-tour-meghalaya"
+  to = "/walking-tour-meghalaya.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/walking-holiday-eastern-arunachal-pradesh"
+  to = "/walking-holiday-eastern-arunachal-pradesh.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/family-holiday-assam"
+  to = "/family-holiday-assam.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours/motorcycle-overland-northeast"
+  to = "/motorcycle-tour-5-states-northeast-india.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
