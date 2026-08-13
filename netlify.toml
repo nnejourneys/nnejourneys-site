@@ -1,6 +1,36 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/aboutus"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/tours"
+  to = "/tours-northeast-india.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/#contact"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/destination"
+  to = "/destination.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
