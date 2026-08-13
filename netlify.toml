@@ -20,16 +20,19 @@
   from = "/about"
   to = "/about.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/destination"
   to = "/destination.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/faq"
   to = "/faq.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/posts/trek-to-glow-lake"
