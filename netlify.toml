@@ -31,6 +31,11 @@
   to = "/faq.html"
   status = 301
 
+[[redirects]]
+  from = "/posts/trek-to-glow-lake"
+  to = "/eastern-arunachal-multi-activity-tour-2026.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
